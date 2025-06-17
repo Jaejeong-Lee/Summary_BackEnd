@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.scoula.board.controller.BoardControllerTest_" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-17T01:46:48" hostname="ijaejeong-ui-MacBookAir.local" time="0.046">
+  <properties/>
+  <testcase name="list()" classname="org.scoula.board.controller.BoardControllerTest_" time="0.046"/>
+  <system-out><![CDATA[ INFO  org.springframework.test.context.web.WebTestContextBootstrapper(getDefaultTestExecutionListenerClassNames:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+ INFO  org.springframework.test.context.web.WebTestContextBootstrapper(getTestExecutionListeners:174) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a772895, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39fc6b2c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@704b2127, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3ee39da0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d332969, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7cc9ce8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2e27d72f, org.springframework.test.context.event.EventPublishingTestExecutionListener@c0b41d6]
+ INFO  com.zaxxer.hikari.HikariDataSource(<init>:71) - HikariPool-1 - Starting...
+ INFO  com.zaxxer.hikari.pool.PoolBase(getAndSetNetworkTimeout:526) - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+ INFO  com.zaxxer.hikari.HikariDataSource(<init>:73) - HikariPool-1 - Start completed.
+ INFO  org.springframework.mock.web.MockServletContext(log:455) - Initializing Spring TestDispatcherServlet ''
+ INFO  org.springframework.test.web.servlet.TestDispatcherServlet(initServletBean:525) - Initializing Servlet ''
+ INFO  org.springframework.test.web.servlet.TestDispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
+ INFO  org.scoula.board.controller.BoardController(list:23) - =====================> BoardController /list
+ INFO  jdbc.sqlonly(sqlOccurred:228) - select * from tbl_board order by no desc 
+
+ INFO  org.scoula.board.controller.BoardControllerTest_(list:48) - {list=[BoardDTO(no=7, title=새로운 테스트 제목, content=새로운 테스트 내용, writer=TestUser, regDate=Mon Jun 16 15:34:07 KST 2025, updateDate=Mon Jun 16 15:34:07 KST 2025), BoardDTO(no=6, title=새로작성하는글, content=새로작성하는내용, writer=user00, regDate=Mon Jun 16 14:01:50 KST 2025, updateDate=Mon Jun 16 14:01:50 KST 2025), BoardDTO(no=4, title=수정된 제목, content=수정된 내용, writer=User04, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 17:58:05 KST 2025), BoardDTO(no=3, title=테스트 제목3, content=테스트 내용3, writer=user00, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 10:28:29 KST 2025), BoardDTO(no=1, title=수정된 제목, content=수정된 내용, writer=user00, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 15:45:22 KST 2025)]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

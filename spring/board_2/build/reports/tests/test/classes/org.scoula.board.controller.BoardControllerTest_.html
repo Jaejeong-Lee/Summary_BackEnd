@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BoardControllerTest_</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BoardControllerTest_</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.scoula.board.controller.html">org.scoula.board.controller</a> &gt; BoardControllerTest_</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.046s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">list()</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre> INFO  org.springframework.test.context.web.WebTestContextBootstrapper(getDefaultTestExecutionListenerClassNames:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+ INFO  org.springframework.test.context.web.WebTestContextBootstrapper(getTestExecutionListeners:174) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a772895, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39fc6b2c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@704b2127, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3ee39da0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5d332969, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7cc9ce8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2e27d72f, org.springframework.test.context.event.EventPublishingTestExecutionListener@c0b41d6]
+ INFO  com.zaxxer.hikari.HikariDataSource(&lt;init&gt;:71) - HikariPool-1 - Starting...
+ INFO  com.zaxxer.hikari.pool.PoolBase(getAndSetNetworkTimeout:526) - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+ INFO  com.zaxxer.hikari.HikariDataSource(&lt;init&gt;:73) - HikariPool-1 - Start completed.
+ INFO  org.springframework.mock.web.MockServletContext(log:455) - Initializing Spring TestDispatcherServlet ''
+ INFO  org.springframework.test.web.servlet.TestDispatcherServlet(initServletBean:525) - Initializing Servlet ''
+ INFO  org.springframework.test.web.servlet.TestDispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
+ INFO  org.scoula.board.controller.BoardController(list:23) - =====================&gt; BoardController /list
+ INFO  jdbc.sqlonly(sqlOccurred:228) - select * from tbl_board order by no desc 
+
+ INFO  org.scoula.board.controller.BoardControllerTest_(list:48) - {list=[BoardDTO(no=7, title=새로운 테스트 제목, content=새로운 테스트 내용, writer=TestUser, regDate=Mon Jun 16 15:34:07 KST 2025, updateDate=Mon Jun 16 15:34:07 KST 2025), BoardDTO(no=6, title=새로작성하는글, content=새로작성하는내용, writer=user00, regDate=Mon Jun 16 14:01:50 KST 2025, updateDate=Mon Jun 16 14:01:50 KST 2025), BoardDTO(no=4, title=수정된 제목, content=수정된 내용, writer=User04, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 17:58:05 KST 2025), BoardDTO(no=3, title=테스트 제목3, content=테스트 내용3, writer=user00, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 10:28:29 KST 2025), BoardDTO(no=1, title=수정된 제목, content=수정된 내용, writer=user00, regDate=Mon Jun 16 10:28:29 KST 2025, updateDate=Mon Jun 16 15:45:22 KST 2025)]}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2025. 6. 17. 오전 10:46:48</p>
+</div>
+</div>
+</body>
+</html>

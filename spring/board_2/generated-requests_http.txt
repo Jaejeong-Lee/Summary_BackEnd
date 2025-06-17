@@ -1,0 +1,40 @@
+GET http://localhost:8080/board/list
+###
+GET http://localhost:8080/board/create
+###
+POST http://localhost:8080/board/create
+Content
+-Type: application/x
+-www
+-form
+-urlencoded
+
+title=테스트제목
+
+&content=테스트내용&writer=apple
+
+###
+
+GET http://localhost:8080/board/get?no=1
+
+###
+POST http://localhost:8080/board/update
+Content
+-Type: application/x
+-www
+-form
+-urlencoded
+
+title=test&content
+
+=test&writer=apple2&no=2
+
+###
+POST http://localhost:8080/board/delete
+Content
+-Type: application/x
+-www
+-form
+-urlencoded
+
+no=1
